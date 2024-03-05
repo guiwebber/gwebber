@@ -1,0 +1,15 @@
+.divFooter {
+    border-top: 3px solid rgb(30, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+}
+.copy {
+    margin: 0px 0px 30px 0px;
+}

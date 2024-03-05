@@ -1,0 +1,16 @@
+.containerApresentation {
+  height: 90vh;
+  position: absolute;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.title {
+  font-size: 4em;
+}

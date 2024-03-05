@@ -1,0 +1,82 @@
+:root {
+  --background-color-light: #e7dcdc;
+  --text-color-light: #000000;
+  --background-color-dark: #302f2f;
+  --text-color-dark: #ffffff;
+  --title-color-light: #5eff00;
+  --title-color-dark: #3af800;
+  --nvft-color-dark: #202020;
+  --nvft-color-light: #8b8b8b;
+}
+
+body.dark-mode {
+  background-color: var(--background-color-dark);
+}
+body.light-mode {
+  background-color: var(--background-color-light);
+}
+.dark-mode {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+.light-mode {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+.navbar-black {
+  background-color: var(--nvft-color-dark);
+  color: var(--text-color-dark);
+}
+
+.navbar-white {
+  background-color: var(--nvft-color-light);
+  color: var(--text-color-light);
+}
+
+.text-light li a {
+  color: var(--text-color-light);
+}
+.text-dark li a {
+  color: var(--text-color-dark);
+}
+.text-dark li a:hover {
+  text-shadow: 0px 2px 5px var(--text-color-dark);
+}
+.text-light li a:hover {
+  text-shadow: 0px 2px 5px var(--text-color-light);
+}
+
+.icon-dark div .iconsSKills {
+  color: var(--text-color-dark);
+}
+.icon-light div .iconsSKills {
+  color: var(--text-color-light);
+}
+
+.title-dark {
+  color: var(--title-color-dark);
+}
+.title-light {
+  color: var(--title-color-light);
+}
+
+.footer-black {
+  background-color: var(--nvft-color-dark);
+  color: var(--text-color-dark);
+}
+
+.footer-white {
+  background-color: var(--nvft-color-light);
+  color: var(--text-color-light);
+}
+
+.about-white {
+  background-color: var(--nvft-color-light);
+  color: var(--text-color-light);
+}
+.about-black {
+  background-color: var(--nvft-color-dark);
+  color: var(--text-color-dark);
+}

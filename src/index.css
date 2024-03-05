@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+  pointer-events:stroke;
+  caret-color: transparent;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+}
+.containerDay,
+.containerNight {
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+}
+.containerNight {
+  background-color: rgb(27, 27, 27);
+  color: lightgreen;
+}
+.containerDay {
+  background-color: rgb(255, 255, 255);
+  color: green;
+}
+
+.moon {
+  color: rgb(212, 212, 5);
+}
+.sun {
+  color: rgb(255, 123, 0);
+}
+
+.containerDefault {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+}
+*::-webkit-scrollbar {
+  display: none;
+}

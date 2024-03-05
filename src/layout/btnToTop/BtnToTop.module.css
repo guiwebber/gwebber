@@ -1,0 +1,35 @@
+.btn {
+    position: fixed;
+    bottom: 70px;
+    right: 70px;
+    background-color: chartreuse;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+@keyframes iconBtn {
+    0% {
+        transform: scale(0.5);
+    }
+    50% {transform: scale(1.2);
+    }
+    100% {transform: scale(0.5);
+    }
+  }
+.iconBtn {
+    font-size: 50px;
+    animation: iconBtn 2s infinite ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        width: 70px;
+        height: 70px;
+        right: 30px;
+        bottom: 30px;
+    }
+    
+}

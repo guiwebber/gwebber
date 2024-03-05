@@ -1,0 +1,298 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100px;
+  border-bottom: 3px solid rgb(30, 255, 0);
+  align-items: center;
+  z-index: 999;
+  text-transform: uppercase;
+}
+.navbarDay {
+  background-color: #73b472;
+}
+.navbarNight {
+  background-color: rgb(20, 19, 19);
+}
+.logo {
+  width: 100px;
+}
+.list {
+  display: flex;
+}
+.item {
+  margin: 10px;
+  transition: 0.5s;
+}
+.item a {
+  transition: 0.5s;
+}
+
+.item a:hover {
+  color: #09f705;
+  transition: 0.5s;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  color: white;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn_usa,
+.btn_br {
+  background-color: transparent;
+  border: none;
+  width: 25px;
+  margin: 5px;
+}
+.btn_usa img,
+.btn_br img {
+  width: 25px;
+}
+button {
+  cursor: pointer;
+}
+.hamburguer input {
+  display: none;
+}
+.hamburguer {
+  display: none;
+}
+.darkDayMode {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+  width: 75px;
+  border-radius: 25px;
+}
+.darkDayMode .night {
+  width: 75px;
+  border-radius: 25px;
+  padding: 2px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid rgb(240, 230, 145);
+}
+.darkDayMode .day {
+  width: 75px;
+  border-radius: 25px;
+  padding: 2px;
+  height: 35px;
+  background-color: rgb(25, 216, 241);
+}
+.divInput {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+.input {
+  width: 75px;
+
+  height: 35px;
+}
+.day .ball {
+  margin-left: 40px;
+  transition: 0.5s;
+  background-color: #f5dd06;
+}
+.night .ball {
+  transition: 0.5s;
+  margin-left: 2px;
+  background-color: rgb(94, 93, 86);
+}
+
+.night::after,
+.night::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 15px;
+  position: absolute;
+  background-color: #f5dd06;
+}
+.night::before {
+  top: 7px;
+  left: 50px;
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 15px;
+  position: absolute;
+  background-color: #f5dd06;
+}
+.day::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  top: -10px;
+  left: 12px;
+
+  position: absolute;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+}
+.day::after {
+  position: absolute;
+  content: "";
+  width: 22px;
+  left: -2px;
+  top: -2px;
+  height: 22px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.589);
+}
+
+.night::after {
+  top: 20px;
+  left: 35px;
+}
+.ball {
+  width: 27px;
+  height: 27px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3px;
+  margin-top: 1px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100vw;
+    padding: 20px;
+    transition: 0.5s;
+    position: absolute;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  
+  .right,
+  .list {
+    display: none;
+  }
+
+  .hamburguer {
+    width: auto;
+    display: block;
+    margin-top: 40px;
+    height: auto;
+  }
+  .hamburguer input {
+    display: block;
+  }
+  .hamburguer span {
+    content: "";
+    display: block;
+    width: 30px;
+    background-color: rgb(30, 255, 0);
+    height: 5px;
+    color: white;
+    position: absolute;
+    transition: 0.5s;
+    top: 45px;
+    right: 20px;
+  }
+  .hamburguer span::after {
+    content: "";
+    display: block;
+    width: 30px;
+    background-color: rgb(30, 255, 0);
+    height: 5px;
+    color: white;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    transition: 0.5s;
+  }
+  .hamburguer span::before {
+    content: "";
+    display: block;
+    width: 30px;
+    background-color: rgb(30, 255, 0);
+    height: 5px;
+    color: white;
+    position: absolute;
+    top: 10px;
+    transition: 0.5s;
+  }
+  .hamburguer #input {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    z-index: 231;
+    opacity: 0;
+  }
+  #input:checked + .span::after {
+    background-color: transparent;
+  }
+  #input:checked + .span {
+    transform: rotate(45deg);
+  }
+  #input:checked + .span::before {
+    transform: rotate(90deg);
+    top: -1px;
+  }
+
+  .mobileOpen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    backdrop-filter: blur(22px);
+    overflow: hidden;
+  }
+  .container .right,
+  .container .list {
+    display: none;
+  }
+  .mobileOpen .right,
+  .mobileOpen .list {
+    display: block;
+  }
+  .mobileOpen .right {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .mobileOpen .right button,
+  .mobileOpen .right button img {
+    width: 35px;
+  }
+  .mobileOpen .modes {
+    width: 80px;
+  }
+  .mobileOpen .night::after {
+    top: 20px;
+    left: 65px;
+  }
+  .mobileOpen .day .ball {
+    margin-left: 42px;
+    transition: 0.5s;
+    background-color: #f5dd06;
+  }
+  .mobileOpen .list {
+    font-size: 2em;
+  }
+  .mobileOpen .list .item {
+    padding: 10px;
+  }
+
+  .mobileOpen {
+    background-color: transparent;
+  }
+}
