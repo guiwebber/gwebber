@@ -4,7 +4,7 @@ import { useState } from "react";
 import "../../index.css";
 import "../darkMode.css";
 import { useDarkMode } from "../DarkModeContext";
-import ParticlesJS from "../Particles/ParticlesJS";
+// import ParticlesJS from "../Particles/ParticlesJS";
 import { useTranslation } from "react-i18next";
 import "../../i18n";
 function Apresentation({ apresentation, dev }) {
@@ -20,7 +20,7 @@ function Apresentation({ apresentation, dev }) {
   };
   };
   return (
-    <ParticlesJS>
+    // <ParticlesJS>
       <div id="apresentation" className={` containerDefault ${styles.containerApresentation}  `}>
         <h2 className={styles.block}>{apresentation}</h2>
         <h1
@@ -32,7 +32,7 @@ function Apresentation({ apresentation, dev }) {
         </h1>
         <h2 className={styles.block}>{dev}</h2>
       </div>
-    </ParticlesJS>
+    // </ParticlesJS>
   );
 }
 
