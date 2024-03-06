@@ -80,3 +80,41 @@ body.light-mode {
   background-color: var(--nvft-color-dark);
   color: var(--text-color-dark);
 }
+
+.icon-hover-dark .divIcon:hover {
+  color: var(--title-color-dark);
+  filter: drop-shadow(1px -1px 5px rgb(98, 185, 57));
+}
+.icon-hover-light .divIcon:hover {
+  color: rgb(18, 77, 10);
+  filter: drop-shadow(1px -1px 5px rgb(43, 255, 0));
+}
+
+.lightOn::after,
+.lightOff::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 2px;
+  left: 50px;
+  height: 50px;
+  background-color: rgb(149, 151, 148);
+}
+.lightOn::before,
+.lightOff::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  width: 20px;
+  left: 41px;
+  border-radius: 50%;
+  height: 20px;
+  z-index: 2;
+}
+.lightOn::before {
+  background-color: rgb(209, 245, 5);
+  filter: drop-shadow(1px 1px 14px rgb(253, 253, 253));
+}
+.lightOff::before {
+  background-color: rgb(157, 170, 89);
+}

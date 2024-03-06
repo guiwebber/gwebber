@@ -36,22 +36,22 @@ function NewComponent(props) {
       fpsLimit: 70,
       particles: {
         color: {
-          value: "rgb(127, 255, 0)",
+          value: "rgb(107, 205, 0)",
         },
         move: {
           direction: "bottom",
           enable: true,
-          speed: 5,
+          speed: 7,
         },
         number: {
-          value: 10,
+          value: 50,
         },
         shape: {
           type: "circle",
         },
         delay: 0,
         size: {
-          value: { min: 2, max: 7 },
+          value: { min: 2, max: 5 },
         },
       },
     }),

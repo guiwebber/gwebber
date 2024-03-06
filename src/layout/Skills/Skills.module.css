@@ -1,4 +1,3 @@
-
 .divMainSkills {
   position: relative;
   padding: 5em;
@@ -17,23 +16,36 @@
   width: 75px;
   height: 75px;
   margin: 30px;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 .containerSkills div {
   margin-right: 50px;
   margin: 0 auto;
 }
 .divIcon:hover {
-  transition: 0.2s;
+  transition: 0.1s;
   cursor: pointer;
-  filter: drop-shadow(0px -0px 7px rgb(43, 255, 0));
-  color: rgb(43, 255, 0);
+}
+.divText {
+  border: 5px solid rgb(0, 0, 0);
+  width: 75%;
+  height: 35%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
 }
 
+.divText h1 {
+  margin: 10px;
+}
 
 @media (max-width: 1000px) {
   .containerSkills {
     width: 100%;
+    height: 100vh;
     margin: 0 auto;
   }
   .textSkills {
@@ -42,20 +54,33 @@
   }
 }
 
+@media (max-width: 850px) {
+  .divText {
+    width: 100%;
+    height: 550px;
+    padding-top: 100px;
+  }
+}
+
 @media (max-width: 768px) {
   .textSkills {
     right: 120px;
   }
+  .containerSkills {
+    height: 120vh;
+  }
 }
 
-
-
-@media (max-width: 500px) {
- .containerSkills {
-  height: 100vh;
- }
- .iconsSKills {
-  width: 50px;
-  height: 50px;
- }
+@media (max-width: 580px) {
+  .containerSkills {
+    padding: 0;
+  }
+  .iconsSKills {
+    width: 50px;
+    height: 50px;
+  }
+  .divMainSkills {
+    padding: 10px;
+    padding-bottom: 50px;
+  }
 }
