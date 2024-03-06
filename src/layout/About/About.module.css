@@ -122,27 +122,24 @@
 }
 
 @media (max-width: 600px) {
+  .image {
+    margin: 0;
+  }
   .containerAbout {
     height: 950px;
-    width: 100%;
+  }
+  .divTextAbout::after { 
+    width: 95%;
   }
   .divTextAbout {
     height: 400px;
-    width: 350px;
-  }
-
-  .divTextAbout::after {
-    width: 340px;
-    display: none;
-  }
-  .divTextAbout::before {
-    display: none;
   }
   .containerAbout {
-    margin: 5vh auto;
+    margin: 1vh auto;
+    width: auto;
   }
   .image {
-    width: 240px;
+    width: auto;
     height: 240px;
   }
 }
