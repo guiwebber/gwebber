@@ -133,6 +133,10 @@
 
   .divTextAbout::after {
     width: 340px;
+    display: none;
+  }
+  .divTextAbout::before {
+    display: none;
   }
   .containerAbout {
     margin: 5vh auto;
