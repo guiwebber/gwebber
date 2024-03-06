@@ -34,20 +34,6 @@ function NewComponent(props) {
         },
       },
       fpsLimit: 70,
-      interactivity: {
-        events: {
-          onHover: {
-            enable: true,
-            mode: "repulse",
-          },
-        },
-        modes: {
-          repulse: {
-            distance: 200,
-            duration: 0.2,
-          },
-        },
-      },
       particles: {
         color: {
           value: "rgb(127, 255, 0)",
@@ -58,7 +44,7 @@ function NewComponent(props) {
           speed: 5,
         },
         number: {
-          value: 30,
+          value: 10,
         },
         shape: {
           type: "circle",
