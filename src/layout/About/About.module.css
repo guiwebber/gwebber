@@ -120,6 +120,7 @@
   .containerAbout {
     height: 950px;
     width: 100%;
+    display: none;
   }
   .divTextAbout {
     height: 400px;
