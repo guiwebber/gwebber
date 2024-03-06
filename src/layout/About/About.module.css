@@ -122,16 +122,20 @@
     width: 100%;
   }
   .divTextAbout {
-    width: 90%;
     height: 400px;
+    width: 350px;
+  }
+  .divTextAbout::before {
+    width: 150px;
+    height: 200%;
   }
   .divTextAbout::after {
-   width: 950px;
+    width: 340px;
   }
   .containerAbout {
     margin: 5vh auto;
   }
-  .image{
+  .image {
     width: 240px;
     height: 240px;
   }
