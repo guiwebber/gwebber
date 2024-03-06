@@ -13,7 +13,7 @@ function About({ aboutTitle, aboutText }) {
         isDarkMode ? "about-white" : "about-black"
       }`}
     >
-      <div className="containerDefault">
+      <div className="">
         <div className={styles.imgText}>
           <div className={styles.divImage}>
             <img className={styles.image} src={me} alt="Me" />
