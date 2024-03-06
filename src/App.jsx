@@ -10,6 +10,7 @@ import About from "./layout/About/About";
 import Skills from "./layout/Skills/Skills";
 import Footer from "./layout/Footer/Footer";
 import BtnToTop from "./layout/btnToTop/BtnToTop";
+import NewComponent from "./layout/newComponent/NewComponent";
 import "./layout/darkMode.css";
 import { DarkModeProvider } from "./layout/DarkModeContext";
 function App() {
@@ -44,6 +45,7 @@ function App() {
       </div>
       <Footer />
       <BtnToTop/>
+      <NewComponent/>
     </DarkModeProvider>
   );
 }

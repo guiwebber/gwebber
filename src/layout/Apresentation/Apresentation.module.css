@@ -1,6 +1,6 @@
 .containerApresentation {
   height: 90vh;
-  position: absolute;
+  position: relative;
   display: flex;
   text-align: center;
   justify-content: center;
