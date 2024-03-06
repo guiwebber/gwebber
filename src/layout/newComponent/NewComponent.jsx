@@ -37,7 +37,7 @@ function NewComponent(props) {
       interactivity: {
         events: {
           onClick: {
-            enable: true,
+            enable: false,
             mode: "push",
           },
           onHover: {
@@ -51,39 +51,36 @@ function NewComponent(props) {
           },
           repulse: {
             distance: 200,
-            duration: 0.4,
+            duration: 0.2,
           },
         },
       },
       particles: {
         color: {
-          value: "#ffffff",
+          value: "rgb(127, 255, 0)",
         },
         links: {
           color: "#ffffff",
           distance: 150,
-          enable: true,
+          enable: false,
           opacity: 0.5,
           width: 1,
         },
         move: {
-          direction: "none",
+          direction: "bottom",
           enable: true,
-          outModes: {
-            default: "bounce",
-          },
-          random: false,
-          speed: 6,
-          straight: false,
+          random: true,
+          speed: 5,
+          straight: true,
         },
         number: {
           density: {
             enable: true,
           },
-          value: 80,
+          value: 110,
         },
         opacity: {
-          value: 0.5,
+          value: 0.6,
         },
         shape: {
           type: "circle",
