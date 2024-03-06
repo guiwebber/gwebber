@@ -3,3 +3,11 @@
   width: 100%;
   height: 100vh;
 }
+
+#tsparticles {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -223;
+  border: 1px solid red;
+}

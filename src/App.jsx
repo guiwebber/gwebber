@@ -37,6 +37,7 @@ function App() {
           apresentation={t("apresentation.text")}
           dev={t("dev.text")}
         />
+          <NewComponent />
         <About
           aboutText={t("aboutText.text")}
           aboutTitle={t("aboutTitle.text")}
@@ -44,8 +45,7 @@ function App() {
         <Skills />
       </div>
       <Footer />
-      <BtnToTop/>
-      <NewComponent/>
+      <BtnToTop />
     </DarkModeProvider>
   );
 }

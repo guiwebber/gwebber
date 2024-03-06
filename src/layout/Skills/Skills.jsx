@@ -16,12 +16,11 @@ function Skills() {
   const { isDarkMode } = useDarkMode();
   return (
     <div
-      className={` containerDefault ${styles.divMainSkills} ${
+      className={`  ${styles.divMainSkills} ${
         isDarkMode ? "light-mode" : "dark-mode"
       } `}
     >
       <div className={styles.containerSkills}>
-        <div className={`${styles.iconsFlex} `}>
           <div className={styles.divIcon}>
             <DiCss3 className={styles.iconsSKills} />
           </div>
@@ -31,7 +30,16 @@ function Skills() {
           <div className={styles.divIcon}>
             <DiJavascript1 className={styles.iconsSKills} />
           </div>
-        </div>
+          <div className={styles.divIcon}>
+            <TbJson className={styles.iconsSKills} />
+          </div>
+
+          <div className={styles.divIcon}>
+            <FaSass className={styles.iconsSKills} />
+          </div>
+          <div className={styles.divIcon}>
+            <DiJqueryLogo className={styles.iconsSKills} />
+          </div>
         <div className={styles.divIcon}>
           <DiReact className={styles.iconsSKills} />
         </div>
@@ -44,21 +52,6 @@ function Skills() {
         <div className={styles.divIcon}>
           <TbApi className={styles.iconsSKills} />
         </div>
-        <div className={`${styles.iconsFlex} `}>
-          <div className={styles.divIcon}>
-            <TbJson className={styles.iconsSKills} />
-          </div>
-
-          <div className={styles.divIcon}>
-            <FaSass className={styles.iconsSKills} />
-          </div>
-          <div className={styles.divIcon}>
-            <DiJqueryLogo className={styles.iconsSKills} />
-          </div>
-        </div>
-      </div>
-      <div className={styles.textSkills}>
-        <p>texto skillsss</p>
       </div>
     </div>
   );

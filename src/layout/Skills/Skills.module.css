@@ -1,14 +1,17 @@
+
+.divMainSkills {
+  position: relative;
+  padding: 5em;
+}
 .containerSkills {
-  height: 550px;
+  height: 650px;
   padding: 0.5rem;
-  width: 100%;
+  width: 80%;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: self-start;
-  margin-bottom: 80px;
-}
-.divMainSkills {
-  position: relative;
+  flex-wrap: wrap;
 }
 .iconsSKills {
   width: 75px;
@@ -20,9 +23,6 @@
   margin-right: 50px;
   margin: 0 auto;
 }
-.iconsFlex div {
-  margin-bottom: 50px;
-}
 .divIcon:hover {
   transition: 0.2s;
   cursor: pointer;
@@ -30,14 +30,6 @@
   color: rgb(43, 255, 0);
 }
 
-.textSkills {
-  width: 60%;
-  height: 30vh;
-  border: 1px solid greenyellow;
-  position: absolute;
-  top: 175px;
-  right: 220px;
-}
 
 @media (max-width: 1000px) {
   .containerSkills {

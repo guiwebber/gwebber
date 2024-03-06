@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   height: 500px;
-  margin: 5em auto;
+  margin: 6em auto auto auto;
   width: 100% !important;
 }
 .image {

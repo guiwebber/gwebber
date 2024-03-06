@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
-function NewComponent() {
+function NewComponent(props) {
   const [init, setInit] = useState(false);
 
   // this should be run only once per application lifetime
@@ -30,7 +30,7 @@ function NewComponent() {
     () => ({
       background: {
         color: {
-          value: "#0d47a1",
+          value: "transparent",
         },
       },
       fpsLimit: 120,
@@ -103,7 +103,9 @@ function NewComponent() {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
-      />
+      >
+        {props.children}
+      </Particles>
     );
   }
 }
