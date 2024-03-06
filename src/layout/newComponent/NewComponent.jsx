@@ -49,6 +49,7 @@ function NewComponent(props) {
         shape: {
           type: "circle",
         },
+        delay: 0,
         size: {
           value: { min: 2, max: 7 },
         },
