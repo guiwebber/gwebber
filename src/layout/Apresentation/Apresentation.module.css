@@ -94,10 +94,10 @@ iteration-count | direction | fill-mode | play-state | name */
   }
   .divHello {
     position: absolute;
-    top: 400px;
+    top: 380px;
   }
   .divDev {
     position: absolute;
-    top: 520px;
+    top: 500px;
   }
 }
