@@ -13,6 +13,7 @@
 }
 .title {
   text-shadow: 2px 2px 3px rgb(0, 0, 0);
+  
 }
 .divHello {
   position: absolute;
@@ -25,7 +26,7 @@
 .title {
   font-size: 4em;
   animation: digitaNome 3s steps(40) 3.5s normal both,
-    hideShow 6s steps(40) 1.8s normal both;
+    hideShow 5.5s steps(40) 2s normal both;
   white-space: nowrap;
   overflow: hidden;
   margin: auto;
@@ -36,7 +37,7 @@ iteration-count | direction | fill-mode | play-state | name */
   /* animation: 3s ease-in 1s 2 reverse both paused slidein; */
 }
 .textHello {
-  animation: digitaNome 3s steps(40) 1s normal both,
+  animation: digitaNome 2.3s steps(40) 1s normal both,
     hideShow 6s steps(40) -1s normal both;
   white-space: nowrap;
   overflow: hidden;
@@ -47,7 +48,7 @@ iteration-count | direction | fill-mode | play-state | name */
 }
 .textDev {
   animation: digitaNome 3s steps(40) 6s normal both,
-    hideShow 6s steps(40) 4s normal both;
+    hideShow 6s steps(40) 4.5s normal both;
   white-space: nowrap;
   overflow: hidden;
   border-right: 1px solid rgb(0, 0, 0);
@@ -82,5 +83,21 @@ iteration-count | direction | fill-mode | play-state | name */
   }
   to {
     width: 14em;
+  }
+}
+
+
+@media (max-width: 768px) {
+  
+  .title {
+    font-size: 3em;
+  }
+  .divHello {
+    position: absolute;
+    top: 365px;
+  }
+  .divDev {
+    position: absolute;
+    top: 480px;
   }
 }
