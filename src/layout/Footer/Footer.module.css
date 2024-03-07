@@ -2,15 +2,15 @@
     border-top: 3px solid rgb(30, 255, 0);
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    text-align: center;
     position: relative;
 }
-
 .logo {
     width: 200px;
+    margin: auto;
     height: 200px;
 }
 .copy {
+    margin: auto;
     margin: 0px 0px 30px 0px;
 }

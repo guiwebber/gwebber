@@ -118,3 +118,12 @@ body.light-mode {
 .lightOff::before {
   background-color: rgb(157, 170, 89);
 }
+
+.projects-white {
+  background-color: var(--nvft-color-light);
+  color: var(--text-color-light);
+}
+.projects-black {
+  background-color: var(--nvft-color-dark);
+  color: var(--text-color-dark);
+}

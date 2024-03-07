@@ -1,4 +1,4 @@
-import React, { useState, createContext, useContext } from "react";
+import React, { useState } from "react";
 import Navbar from "./layout/Navbar/Navbar";
 import "./index.css";
 
@@ -10,9 +10,11 @@ import About from "./layout/About/About";
 import Skills from "./layout/Skills/Skills";
 import Footer from "./layout/Footer/Footer";
 import BtnToTop from "./layout/btnToTop/BtnToTop";
+import Projects from "./layout/Projects/Projects";
 import NewComponent from "./layout/newComponent/NewComponent";
 import "./layout/darkMode.css";
 import { DarkModeProvider } from "./layout/DarkModeContext";
+import AOSEffect from "./layout/AOSEffect/AOSEffect";
 function App() {
   const { t } = useTranslation();
   const [dadosRecebidos, setDadosRecebidos] = useState(true);
@@ -37,12 +39,19 @@ function App() {
           apresentation={t("apresentation.text")}
           dev={t("dev.text")}
         />
-          <NewComponent />
-        <About
-          aboutText={t("aboutText.text")}
-          aboutTitle={t("aboutTitle.text")}
-        />
-        <Skills />
+        <NewComponent />
+        <AOSEffect data_aos="fade-left">
+          <About
+            aboutText={t("aboutText.text")}
+            aboutTitle={t("aboutTitle.text")}
+          />
+        </AOSEffect>
+        <AOSEffect data_aos="fade-right">
+          <Skills />
+        </AOSEffect>
+        <AOSEffect data_aos="fade-right">
+          <Projects />
+        </AOSEffect>
       </div>
       <Footer />
       <BtnToTop />

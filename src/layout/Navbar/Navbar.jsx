@@ -84,11 +84,6 @@ function Navbar({
             </a>
           </li>
           <li className={styles.item}>
-            <a onClick={handleMenu} href="#formation">
-              {formation}
-            </a>
-          </li>
-          <li className={styles.item}>
             <a onClick={handleMenu} href="#projects">
               {projects}
             </a>

@@ -13,22 +13,28 @@ function Apresentation({ apresentation, dev }) {
     if (e.target.checked) {
       setIsChecked(!isChecked);
     }
-  
   };
   return (
     // <ParticlesJS>
 
-      <div id="apresentation" className={` containerDefault ${styles.containerApresentation}  `}>
-        <h2 className={styles.block}>{apresentation}</h2>
-        <h1
-          className={`${styles.title} ${
-            isDarkMode ? "title-light" : "title-dark "
-          }`}
-          >
-          Guilherme Webber
-        </h1>
-        <h2 className={styles.block}>{dev}</h2>
+    <div
+      id="apresentation"
+      className={` containerDefault ${styles.containerApresentation}  `}
+    >
+      <div className={styles.divHello}>
+        <h2 className={`${styles.block} ${styles.textHello}`}>{apresentation}</h2>
       </div>
+      <h1
+        className={`${styles.title} ${
+          isDarkMode ? "title-light" : "title-dark "
+        }`}
+      >
+        Guilherme Webber
+      </h1>
+      <div className={styles.divDev}>
+        <h2 className={`${styles.block} ${styles.textDev}`}>{dev}</h2>
+      </div>
+    </div>
     // </ParticlesJS>
   );
 }

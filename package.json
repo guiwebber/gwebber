@@ -12,6 +12,7 @@
   "dependencies": {
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.3.0",
+    "aos": "^3.0.0-beta.6",
     "i18next": "^23.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
