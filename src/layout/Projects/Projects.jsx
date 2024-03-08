@@ -10,7 +10,10 @@ function Projects() {
         isDarkMode ? "projects-white" : "projects-black"
       }`}
     >
-      DIV PROJECTS
+      <div className={styles.subContainer}>
+        <div className={styles.projects}>Aqui 3</div>
+        <div className={styles.projects}> Aqui 2</div>
+      </div>
     </div>
   );
 }
