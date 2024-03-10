@@ -2,8 +2,31 @@ import React, { useState } from "react";
 import "./Projects.css";
 import "../darkMode.css";
 import { useDarkMode } from "../DarkModeContext";
+
 function Projects() {
-  const [positions, setPositions] = useState(['a', 'b', 'c']);
+  const [positions, setPositions] = useState([
+    {
+      title: "Valorant Guide",
+      description:
+        "Projeto utilizando a api de valorant, e utilizando as tecnologias HTML, CSS e JavaScript",
+      image: "url_da_imagem_1",
+      projectLink: "",
+    },
+    {
+      title: "Cartão interativo",
+      description:
+        "Projeto com intuito de criar uma página de cadastro de cartão de crédito, com interatividade, utilizando HTMl, CSS e JavaScript",
+      image: "url_da_imagem_2",
+      projectLink: "interactive-card-form-six.vercel.app/",
+    },
+    {
+      title: "Página principal de notícias",
+      description:
+        "Projeto focado em uma landing page, focada em posicionamento de elementos, utilizando somente HTML e CSS ",
+      image: "url_da_imagem_3",
+      projectLink: "news-homepage-grid.vercel.app/",
+    },
+  ]);
 
   const handleRightClick = () => {
     const newPos = [...positions];
@@ -19,24 +42,35 @@ function Projects() {
     setPositions(newPos);
   };
 
-  const getPositionStyle = (index) => {
-    const positionIndex = positions.findIndex((pos, idx) => idx === index);
-    const top = positionIndex * 100; // assuming 100px height for each div
-    return { position: 'absolute', top: `${top}px` };
-  };
-
   return (
-    <div className="containerProjects" style={ { position: 'relative', height: `${positions.length * 100}px` }}>
-      {positions.map((position, index) => (
-        <div key={index} className="box" style={getPositionStyle(index)}>
-          {position}
+    <div className="containerProjects">
+      <button className="btnLeft" onClick={handleLeftClick}>
+      ⬅
+      </button>
+      {positions.map((project, index) => (
+        <div
+          key={index}
+          className={`box ${
+            index === 0
+              ? "left"
+              : index === positions.length - 1
+              ? "right"
+              : "center"
+          }`}
+        >
+          <img src={project.image} alt={project.title} />
+          <h2>{project.title}</h2>
+          <p>{project.description}</p>
+          <a className="projectLink" href={project.link}>
+            Link do projeto
+          </a>
         </div>
       ))}
-
-      <button onClick={handleLeftClick}>Move Left</button>
-      <button onClick={handleRightClick}>Move Right</button>
+      <button className="btnRight" onClick={handleRightClick}>
+      ⮕
+      </button>
     </div>
   );
-};
+}
 
 export default Projects;

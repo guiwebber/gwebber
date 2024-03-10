@@ -1,58 +1,61 @@
 .containerProjects {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-.subContainer {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 60vh;
   margin: auto;
-  border: 1px solid red;
   position: relative;
-  transition: .5s;
+  background-color: black;
+}
+
+.btnLeft,
+.btnRight {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  border: 3px solid rgb(51, 253, 0);
+  background-color: rgb(51, 253, 0);
+}
+.btnRight {
+  right: 5em;
+}
+.btnLeft {
+  left: 5em;
+}
+
+.box {
+  width: 28em;
+  height: 23em;
+  background-color: black;
+  border: 3px solid rgb(51, 253, 0);
+  transition: opacity 0.5s ease-in-out;
+  margin: 0 10px; /* Adicione margem entre as caixas */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.left,
+.right {
+  opacity: 0.3;
+  position:absolute;
+}
+.center {
+  z-index: 11;
 }
 .right {
-  transition: .5s;
-  width: 350px;
-  height: 350px;
-  background-color: red;
-  opacity: 0.2;
-  
+  right:45%;
 }
-
 .left {
-  width: 350px;
-  height: 350px;
-  background-color: blue;
-  transition: .5s;
-  opacity: 0.2;
+ left: 45%;
 }
 
-.center {
-  transition: .5s;
-  width: 450px;
-  height: 450px;
-  background-color: green;
-  z-index: 22;
-}
-
-.btnRight {
-  right: 25%;
-}
-.btnLeft, .btnRight {
-  background-color: greenyellow;
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  top: 45%;
-  font-size: 2em;
-  border: none;
-
-}
-
-.btnLeft {
-  left: 25%;
+.projectLink {
+  background-color: rgb(51, 253, 0);
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
 }
