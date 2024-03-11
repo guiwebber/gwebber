@@ -11,7 +11,7 @@
 .btnLeft,
 .btnRight {
   width: 100px;
-  height: 50px;
+  height: 60px;
   position: absolute;
   border: 3px solid rgb(51, 253, 0);
   background-color: rgb(51, 253, 0);
@@ -19,14 +19,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .btnRight {
   right: 5em;
 }
 .btnLeft {
   left: 5em;
-  rotate: 180deg;
-  justify-content: baseline;
+  margin: auto;
+  padding: auto;
 }
 
 .box {

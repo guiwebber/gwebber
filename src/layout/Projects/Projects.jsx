@@ -3,11 +3,11 @@ import "./Projects.css";
 import "../darkMode.css";
 import { useDarkMode } from "../DarkModeContext";
 import valorant from "../../images/valorantguide.png";
-import cartao from '../../images/cartao.png';
-import news from '../../images/news-page.png';
+import cartao from "../../images/cartao.png";
+import news from "../../images/news-page.png";
 function Projects() {
   const { isDarkMode } = useDarkMode();
-  console.log(valorant)
+  console.log(valorant);
   const [positions, setPositions] = useState([
     {
       title: "Valorant Guide",
@@ -47,13 +47,14 @@ function Projects() {
   };
 
   return (
-    <div id="projects"
+    <div
+      id="projects"
       className={`containerProjects ${
         isDarkMode ? "projects-white" : "projects-black"
       }`}
     >
       <button className="btnLeft" onClick={handleLeftClick}>
-      ➜
+        ⇐
       </button>
       {positions.map((project, index) => (
         <div
@@ -85,7 +86,7 @@ function Projects() {
         </div>
       ))}
       <button className="btnRight" onClick={handleRightClick}>
-      ➜
+        ⇒
       </button>
     </div>
   );
