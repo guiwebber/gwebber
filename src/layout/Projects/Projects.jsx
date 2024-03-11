@@ -47,7 +47,7 @@ function Projects() {
   };
 
   return (
-    <div
+    <div id="projects"
       className={`containerProjects ${
         isDarkMode ? "projects-white" : "projects-black"
       }`}

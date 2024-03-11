@@ -26,7 +26,7 @@ function Skills() {
 
   const { isDarkMode } = useDarkMode();
   return (
-    <div
+    <div id="skills"
       className={`  ${styles.divMainSkills} ${
         isDarkMode ? "light-mode" : "dark-mode"
       } `}
