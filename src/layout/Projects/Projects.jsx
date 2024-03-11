@@ -2,29 +2,32 @@ import React, { useState } from "react";
 import "./Projects.css";
 import "../darkMode.css";
 import { useDarkMode } from "../DarkModeContext";
-
+import valorant from "../../images/valorantguide.png";
+import cartao from '../../images/cartao.png';
+import news from '../../images/news-page.png';
 function Projects() {
   const { isDarkMode } = useDarkMode();
+  console.log(valorant)
   const [positions, setPositions] = useState([
     {
       title: "Valorant Guide",
       description:
         "Projeto utilizando a api de valorant, e utilizando as tecnologias HTML, CSS e JavaScript",
-      image: "../../src/images/valorantguide.png",
+      image: valorant,
       projectLink: "https://valorant-guide.vercel.app/index.html",
     },
     {
       title: "Cartão interativo",
       description:
         "Projeto com intuito de criar uma página de cadastro de cartão de crédito, com interatividade, utilizando HTMl, CSS e JavaScript",
-      image: "../../src/images/cartao.png",
+      image: cartao,
       projectLink: "https://interactive-card-form-six.vercel.app/",
     },
     {
       title: "Página principal de notícias",
       description:
         "Projeto focado em uma landing page, focada em posicionamento de elementos, utilizando somente HTML e CSS ",
-      image: "../../src/images/news-page.png",
+      image: news,
       projectLink: "https://news-homepage-grid.vercel.app/",
     },
   ]);

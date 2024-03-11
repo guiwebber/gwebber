@@ -31,7 +31,8 @@
   margin: 0 10px; /* Adicione margem entre as caixas */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
+  padding: 20px;
   align-items: center;
   text-align: center;
   position: relative;
@@ -107,6 +108,7 @@
   .box {
     width: 25em;
     height: 20em;
+    padding: 10px;
   }
 
   .btnLeft {
@@ -147,6 +149,13 @@
   .box {
     width: 20em;
     height: 18em;
+  }
+  .box h2 {
+    padding: 2px;
+    font-size: 1em;
+  }
+  .box p {
+    padding: 2px;
   }
   
 }
