@@ -167,5 +167,11 @@
     height: 40px;
     font-size: 1.5em;
   }
+  .btnLeft {
+    font-size: 1.5em;
+  }
+  .btnRight {
+    font-size: 1em;
+  }
   
 }
