@@ -25,6 +25,8 @@
 }
 .btnLeft {
   left: 5em;
+  rotate: 180deg;
+  justify-content: baseline;
 }
 
 .box {
@@ -165,13 +167,7 @@
   .btnLeft, .btnRight {
     width: 40px;
     height: 40px;
-    
-  }
-  .btnLeft {
-    font-size: 1.5em;
-  }
-  .btnRight {
-    font-size: 1em;
+
   }
   
 }
