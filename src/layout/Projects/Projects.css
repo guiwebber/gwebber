@@ -162,5 +162,10 @@
   .box p {
     padding: 2px;
   }
+  .btnLeft, .btnRight {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5em;
+  }
   
 }
