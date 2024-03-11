@@ -127,3 +127,20 @@ body.light-mode {
   background-color: var(--nvft-color-dark);
   color: var(--text-color-dark);
 }
+
+.box-black {
+  background-color: #e7dcdc;
+  color: rgb(0, 0, 0);
+}
+.link-black {
+  color: rgb(0, 0, 0);
+}
+
+.link-white {
+  color: white;
+}
+
+.box-white {
+  background-color: #302f2f;
+  color: white;
+}

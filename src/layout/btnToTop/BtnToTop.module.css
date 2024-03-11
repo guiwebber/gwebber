@@ -24,12 +24,16 @@
     animation: iconBtn 2s infinite ease-in-out;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
+    
     .btn {
         width: 70px;
         height: 70px;
         right: 20px;
         bottom: 20px;
     }
+}
+@media (max-width: 768px) {
+    
     
 }
