@@ -80,7 +80,8 @@ body.light-mode {
   color: var(--default-color);
 }
 .title-light {
-  color:rgb(0, 173, 111);
+  color:var(--default-color);
+  text-shadow: 1px 1px 12px var(--default-color);
 }
 
 .name-dark {
