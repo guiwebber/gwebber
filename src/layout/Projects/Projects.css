@@ -10,7 +10,7 @@
 
 .btnLeft,
 .btnRight {
-  width: 50px;
+  width: 60px;
   height: 60px;
   position: absolute;
   border: none;
@@ -20,6 +20,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid var(--default-color);
+  border-radius: 50%;
 
 }
 .btnRight {
@@ -161,7 +163,7 @@
 @media (max-width:520px) {
   .box {
     width: 20em;
-    height: 18em;
+    height: 23em;
   }
   .box h2 {
     padding: 2px;

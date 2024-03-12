@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Skills.module.css";
 import "../../index.css";
 import {
@@ -13,7 +13,7 @@ import { TbApi, TbJson } from "react-icons/tb";
 import { useDarkMode } from "../DarkModeContext";
 import "../darkMode.css";
 import i18n from "../../i18n";
-import { useState } from "react";
+
 function Skills({
   skillsTitle,
   css,
@@ -27,17 +27,23 @@ function Skills({
   github,
   api,
 }) {
-  const [technologies, setTecnologies] = useState(
-    "Clique nas tecnologias para um breve resumo."
+  const [technologies, setTechnologies] = useState(
+    i18n.t("defaultTechnologyText")
   );
-  const [titleTech, setTitleTech] = useState();
+  const [titleTech, setTitleTech] = useState("");
 
-  const handleTecnology = (text, title) => {
-    setTecnologies(text);
+  const handleTechnology = (text, title) => {
+    setTechnologies(text);
     setTitleTech(title);
   };
 
   const { isDarkMode } = useDarkMode();
+
+  useEffect(() => {
+    // Atualiza o estado inicial quando o idioma muda
+    setTechnologies(i18n.t("defaultTechnologyText"));
+  }, [i18n.language]); // Execute este efeito quando o idioma (language) do i18n mudar
+
   return (
     <div
       id="skills"
@@ -54,61 +60,61 @@ function Skills({
         }`}
       >
         <div
-          onClick={() => handleTecnology(i18n.t(css), "CSS")}
+          onClick={() => handleTechnology(i18n.t(css), "CSS")}
           className={`divIcon ${styles.divIcon} `}
         >
           <DiCss3 className={styles.iconsSKills} />
         </div>
         <div
-          onClick={() => handleTecnology(i18n.t(html), "HTML")}
+          onClick={() => handleTechnology(i18n.t(html), "HTML")}
           className={`divIcon ${styles.divIcon} `}
         >
           <DiHtml5 className={styles.iconsSKills} />
         </div>
         <div
-          onClick={() => handleTecnology(i18n.t(js), "JavaScript")}
+          onClick={() => handleTechnology(i18n.t(js), "JavaScript")}
           className={`divIcon ${styles.divIcon} `}
         >
           <DiJavascript1 className={styles.iconsSKills} />
         </div>
         <div
-          onClick={() => handleTecnology(i18n.t(json), "JSON")}
+          onClick={() => handleTechnology(i18n.t(json), "JSON")}
           className={`divIcon ${styles.divIcon} `}
         >
           <TbJson className={styles.iconsSKills} />
         </div>
         <div
-          onClick={() => handleTecnology(i18n.t(sass), "SASS")}
+          onClick={() => handleTechnology(i18n.t(sass), "SASS")}
           className={`divIcon ${styles.divIcon} `}
         >
           <FaSass className={styles.iconsSKills} />
         </div>
         <div
-          onClick={() => handleTecnology(i18n.t(jquery), "jQuery")}
+          onClick={() => handleTechnology(i18n.t(jquery), "jQuery")}
           className={`divIcon ${styles.divIcon} `}
         >
           <DiJqueryLogo className={styles.iconsSKills} />
         </div>
         <div
-          onClick={() => handleTecnology(i18n.t(react), "React")}
+          onClick={() => handleTechnology(i18n.t(react), "React")}
           className={`divIcon ${styles.divIcon} `}
         >
           <DiReact className={styles.iconsSKills} />
         </div>
         <div
-          onClick={() => handleTecnology(i18n.t(git), "Git")}
+          onClick={() => handleTechnology(i18n.t(git), "Git")}
           className={`divIcon ${styles.divIcon} `}
         >
           <FaGitAlt className={styles.iconsSKills} />
         </div>
         <div
-          onClick={() => handleTecnology(i18n.t(github), "Github")}
+          onClick={() => handleTechnology(i18n.t(github), "Github")}
           className={`divIcon ${styles.divIcon} `}
         >
           <FaGithub className={styles.iconsSKills} />
         </div>
         <div
-          onClick={() => handleTecnology(i18n.t(api), "API")}
+          onClick={() => handleTechnology(i18n.t(api), "API")}
           className={`divIcon ${styles.divIcon} `}
         >
           <TbApi className={styles.iconsSKills} />
