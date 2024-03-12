@@ -35,6 +35,21 @@
   margin: auto;
   max-width: fit-content;
 }
+.iconsSocial a{
+  color: white;
+}
+.icon {
+  transition: .3s;
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+}
+
+.icon:hover {
+  transition: .3s;
+  color: var(--default-color);
+
+}
 
 @keyframes piscaCursor {
   from {

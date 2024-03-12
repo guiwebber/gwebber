@@ -11,6 +11,7 @@ import Skills from "./layout/Skills/Skills";
 import Footer from "./layout/Footer/Footer";
 import BtnToTop from "./layout/btnToTop/BtnToTop";
 import Projects from "./layout/Projects/Projects";
+import Contact from './layout/Contact/Contact';
 import "./layout/darkMode.css";
 import { DarkModeProvider } from "./layout/DarkModeContext";
 import AOSEffect from "./layout/AOSEffect/AOSEffect";
@@ -30,7 +31,6 @@ function App() {
         projects={t("projects.text")}
         formation={t("formation.text")}
         skills={t("skills.text")}
-        
       />
       <div
         className={`container ${dadosRecebidos ? "dark-mode" : "light-mode"}`}
@@ -71,6 +71,9 @@ function App() {
             newsPageDesc={t("newsPageDesc.text")}
             projectBtn={t("projectBtn.text")}
           />
+        </AOSEffect>
+        <AOSEffect data_aos="fade-down">
+          <Contact />
         </AOSEffect>
       </div>
       <Footer />
