@@ -24,5 +24,6 @@
   "cardTitle.text": "Cartão interativo",
   "cardDesc.text": "Projeto com intuito de criar uma página de cadastro de cartão de crédito, com interatividade, utilizando HTMl, CSS e JavaScript",
   "newsPageTitle.text": "Página principal de notícias",
-  "newsPageDesc.text": "Projeto focado em uma landing page, focada em posicionamento de elementos, utilizando somente HTML e CSS"
+  "newsPageDesc.text": "Projeto focado em uma landing page, focada em posicionamento de elementos, utilizando somente HTML e CSS",
+  "projectBtn.text": "Link do projeto"
 }

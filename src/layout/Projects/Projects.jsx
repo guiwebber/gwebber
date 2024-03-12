@@ -1,41 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Projects.css";
 import "../darkMode.css";
 import { useDarkMode } from "../DarkModeContext";
 import valorant from "../../images/valorantguide.png";
 import cartao from "../../images/cartao.png";
 import news from "../../images/news-page.png";
-import i18n from "../../i18n";
-function Projects({
-  projectTitle,
-  valorantTitle,
-  valorantDesc,
-  cardTitle,
-  cardDesc,
-  newsPageTitle,
-  newsPageDesc,
-}) {
+import { useTranslation } from "react-i18next";
+
+function Projects() {
+  const { t } = useTranslation();
   const { isDarkMode } = useDarkMode();
-  const [positions, setPositions] = useState([
-    {
-      title: i18n.t(valorantTitle),
-      description: i18n.t(valorantDesc),
-      image: valorant,
-      projectLink: "https://valorant-guide.vercel.app/index.html",
-    },
-    {
-      title: i18n.t(cardTitle),
-      description: i18n.t(cardDesc),
-      image: cartao,
-      projectLink: "https://interactive-card-form-six.vercel.app/",
-    },
-    {
-      title: i18n.t(newsPageTitle),
-      description: i18n.t(newsPageDesc),
-      image: news,
-      projectLink: "https://news-homepage-grid.vercel.app/",
-    },
-  ]);
+  const [positions, setPositions] = useState([]);
+
+  useEffect(() => {
+    setPositions([
+      {
+        title: t("valorantTitle.text"),
+        description: t("valorantDesc.text"),
+        image: valorant,
+        projectLink: "https://valorant-guide.vercel.app/index.html",
+      },
+      {
+        title: t("cardTitle.text"),
+        description: t("cardDesc.text"),
+        image: cartao,
+        projectLink: "https://interactive-card-form-six.vercel.app/",
+      },
+      {
+        title: t("newsPageTitle.text"),
+        description: t("newsPageDesc.text"),
+        image: news,
+        projectLink: "https://news-homepage-grid.vercel.app/",
+      },
+    ]);
+  }, [t]);
 
   const handleRightClick = () => {
     const newPos = [...positions];
@@ -59,11 +57,11 @@ function Projects({
       }`}
     >
       <h1
-        className={` titleProjects ${
+        className={`titleProjects ${
           isDarkMode ? "title-dark" : "title-light"
         }`}
       >
-        {projectTitle}
+        {t("projectTitle.text")}
       </h1>
       <button className="btnLeft" onClick={handleLeftClick}>
         ⇐
@@ -79,11 +77,7 @@ function Projects({
               : "center"
           } ${isDarkMode ? "box-black" : "box-white"}`}
         >
-          <img
-            className="imageProject"
-            src={project.image}
-            alt={project.title}
-          />
+          <img className="imageProject" src={project.image} alt={project.title} />
           <h2>{project.title}</h2>
           <p>{project.description}</p>
           <a
@@ -93,7 +87,7 @@ function Projects({
             }`}
             href={project.projectLink}
           >
-            Link do projeto
+            {t("projectBtn.text")}
           </a>
         </div>
       ))}

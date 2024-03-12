@@ -24,5 +24,6 @@
   "cardTitle.text": "Interactive card",
   "cardDesc.text": "Project with the aim of creating a credit card registration page, with interactivity, using HTMl, CSS and JavaScript",
   "newsPageTitle.text": "News home page",
-  "newsPageDesc.text": "Project focused on a landing page, focused on positioning elements, using only HTML and CSS"
+  "newsPageDesc.text": "Project focused on a landing page, focused on positioning elements, using only HTML and CSS",
+  "projectBtn.text": "Project link"
 }

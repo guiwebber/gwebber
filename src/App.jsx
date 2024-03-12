@@ -30,6 +30,7 @@ function App() {
         projects={t("projects.text")}
         formation={t("formation.text")}
         skills={t("skills.text")}
+        
       />
       <div
         className={`container ${dadosRecebidos ? "dark-mode" : "light-mode"}`}
@@ -68,6 +69,7 @@ function App() {
             cardDesc={t("cardDesc.text")}
             newsPageTitle={t("newsPageTitle.text")}
             newsPageDesc={t("newsPageDesc.text")}
+            projectBtn={t("projectBtn.text")}
           />
         </AOSEffect>
       </div>

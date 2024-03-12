@@ -16,7 +16,6 @@ function Navbar({
   about,
   contact,
   projects,
-  formation,
   skills,
   sendData,
 }) {
@@ -101,6 +100,7 @@ function Navbar({
             onClick={() => changeLanguage("en")}
             className={styles.btn_usa}
           >
+            
             <img src={USA} alt="" />
           </button>
           <button
