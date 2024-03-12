@@ -3,10 +3,14 @@
   --text-color-light: #000000;
   --background-color-dark: #302f2f;
   --text-color-dark: #ffffff;
-  --title-color-light: #5eff00;
-  --title-color-dark: #3af800;
+  --title-color-light: #0a0a0a;
+  --title-color-dark: #f8f8f8;
   --nvft-color-dark: #202020;
-  --nvft-color-light: #8b8b8b;
+  --nvft-color-light: #6e6d6d;
+  --subtitle-color-light: rgb(0, 173, 111);
+  --subtitle-color-dark: rgb(0, 173, 111);
+
+  --default-color: rgb(0, 173, 111)
 }
 
 body.dark-mode {
@@ -32,7 +36,7 @@ body.light-mode {
 
 .navbar-white {
   background-color: var(--nvft-color-light);
-  color: var(--text-color-light);
+  color: var(--text-color-dark);
 }
 
 .text-light li a {
@@ -42,7 +46,7 @@ body.light-mode {
   color: var(--text-color-dark);
 }
 .text-dark li a:hover {
-  text-shadow: 0px 2px 5px var(--text-color-dark);
+  text-shadow: 2px 2px 7px var(--title-color-light);
 }
 .text-light li a:hover {
   text-shadow: 0px 2px 5px var(--text-color-light);
@@ -69,9 +73,24 @@ body.light-mode {
 
 .footer-white {
   background-color: var(--nvft-color-light);
-  color: var(--text-color-light);
+  color: var(--text-color-dark);
 }
 
+.title-dark {
+  color: var(--default-color);
+}
+.title-light {
+  color:rgb(0, 173, 111);
+}
+
+.name-dark {
+  color: #6e6d6d;
+  text-shadow: 1px 1px 12px var(--default-color);
+}
+.name-light {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 12px var(--default-color);
+ }
 .about-white {
   background-color: var(--nvft-color-light);
   color: var(--text-color-light);
@@ -82,12 +101,12 @@ body.light-mode {
 }
 
 .icon-hover-dark .divIcon:hover {
-  color: var(--title-color-dark);
-  filter: drop-shadow(1px -1px 5px rgb(98, 185, 57));
+  color: var(--default-color);
+  filter: drop-shadow(1px -1px 5px var(--default-color));
 }
 .icon-hover-light .divIcon:hover {
-  color: rgb(18, 77, 10);
-  filter: drop-shadow(1px -1px 5px rgb(43, 255, 0));
+  color: var(--default-color);
+  filter: drop-shadow(1px -1px 5px var(--default-color));
 }
 
 .lightOn::after,
@@ -143,4 +162,11 @@ body.light-mode {
 .box-white {
   background-color: #302f2f;
   color: white;
+}
+
+.subtitle-dark {
+  color: var(--subtitle-color-dark);
+}
+.subtitle-light {
+  color: var(--subtitle-color-light);
 }

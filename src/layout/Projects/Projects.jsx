@@ -53,6 +53,7 @@ function Projects() {
         isDarkMode ? "projects-white" : "projects-black"
       }`}
     >
+      <h1 className={` titleProjects ${isDarkMode ? 'title-dark': 'title-light'}`}>Projetos</h1>
       <button className="btnLeft" onClick={handleLeftClick}>
         ⇐
       </button>

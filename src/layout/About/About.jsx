@@ -23,7 +23,7 @@ function About({ aboutTitle, aboutText }) {
               isDarkMode ? "about-white" : "about-black"
             }`}
           >
-            <h1 className={styles.titleAbout}>{aboutTitle}</h1>
+            <h1 className={`${styles.titleAbout} ${isDarkMode ? 'title-dark': 'title-light'}`}>{aboutTitle}</h1>
             <p className={styles.textAbout}>{aboutText}</p>
           </div>
         </div>

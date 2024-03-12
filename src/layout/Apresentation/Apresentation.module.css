@@ -11,10 +11,6 @@
   right: 0;
   margin: auto;
 }
-.title {
-  text-shadow: 2px 2px 3px rgb(0, 0, 0);
-  
-}
 .divHello {
   position: absolute;
   top: 400px;
@@ -25,30 +21,14 @@
 }
 .title {
   font-size: 4em;
-  animation: digitaNome 3s steps(40) 3.5s normal both,
-    hideShow 5.5s steps(40) 2s normal both;
   white-space: nowrap;
   overflow: hidden;
   margin: auto;
-  border-right: 1px solid rgb(0, 0, 0);
   max-width: fit-content;
-  /* @keyframes duration | easing-function | delay |
-iteration-count | direction | fill-mode | play-state | name */
-  /* animation: 3s ease-in 1s 2 reverse both paused slidein; */
-}
-.textHello {
-  animation: digitaNome 2.3s steps(40) 1s normal both,
-    hideShow 6s steps(40) -1s normal both;
-  white-space: nowrap;
-  overflow: hidden;
-
-  border-right: 1px solid rgb(0, 0, 0);
-  margin: auto;
-  max-width: fit-content;
+  font-weight: 500;
 }
 .textDev {
-  animation: digitaNome 3s steps(40) 6s normal both,
-    hideShow 6s steps(40) 4.5s normal both;
+  animation: digitaNome 3s steps(40) 1s normal both;
   white-space: nowrap;
   overflow: hidden;
   border-right: 1px solid rgb(0, 0, 0);
@@ -56,17 +36,6 @@ iteration-count | direction | fill-mode | play-state | name */
   max-width: fit-content;
 }
 
-@keyframes hideShow {
-  0% {
-    border-right: none;
-  }
-  50% {
-    border-right: 1px solid rgb(0, 0, 0);
-  }
-  100% {
-    border-right: none;
-  }
-}
 @keyframes piscaCursor {
   from {
     border-right-color: rgb(0, 0, 0);
@@ -86,9 +55,7 @@ iteration-count | direction | fill-mode | play-state | name */
   }
 }
 
-
 @media (max-width: 768px) {
-  
   .title {
     font-size: 3em;
   }

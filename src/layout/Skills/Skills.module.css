@@ -1,6 +1,7 @@
 .divMainSkills {
   position: relative;
   padding: 5em;
+  text-align: center;
 }
 .containerSkills {
   height: 650px;

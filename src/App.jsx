@@ -11,7 +11,6 @@ import Skills from "./layout/Skills/Skills";
 import Footer from "./layout/Footer/Footer";
 import BtnToTop from "./layout/btnToTop/BtnToTop";
 import Projects from "./layout/Projects/Projects";
-import NewComponent from "./layout/newComponent/NewComponent";
 import "./layout/darkMode.css";
 import { DarkModeProvider } from "./layout/DarkModeContext";
 import AOSEffect from "./layout/AOSEffect/AOSEffect";
@@ -39,7 +38,6 @@ function App() {
           apresentation={t("apresentation.text")}
           dev={t("dev.text")}
         />
-        <NewComponent />
         <AOSEffect data_aos="fade-left">
           <About
             aboutText={t("aboutText.text")}

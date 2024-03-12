@@ -31,6 +31,7 @@ function Skills() {
         isDarkMode ? "light-mode" : "dark-mode"
       } `}
     >
+      <h1 className={`${isDarkMode ? 'title-dark': 'title-light'}`}>Habilidades</h1>
       <div
         className={`${styles.containerSkills} ${
           isDarkMode ? "icon-hover-light" : "icon-hover-dark"
