@@ -89,7 +89,7 @@
   }
   .divTextAbout {
     flex-direction: column;
-    height: 30vh;
+    height: 40vh;
     margin: auto;
     align-items: center;
 
@@ -132,7 +132,7 @@
     width: 96%;
   }
   .divTextAbout {
-    height: 400px;
+    height: 56vh;
   }
   .containerAbout {
     margin: 1vh auto;

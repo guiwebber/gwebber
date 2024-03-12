@@ -3,6 +3,7 @@
   padding: 5em;
   text-align: center;
 }
+
 .containerSkills {
   height: 650px;
   padding: 0.5rem;
@@ -26,6 +27,9 @@
 .divIcon:hover {
   transition: 0.1s;
   cursor: pointer;
+}
+.divText h1 {
+  color: var(--default-color);
 }
 .divText {
   border: 5px solid rgb(0, 0, 0);
