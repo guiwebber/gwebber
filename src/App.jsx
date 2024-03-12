@@ -45,10 +45,30 @@ function App() {
           />
         </AOSEffect>
         <AOSEffect data_aos="fade-right">
-          <Skills />
+          <Skills
+            skillsTitle={t("skillsTitle.text")}
+            css={t("css.text")}
+            js={t("js.text")}
+            react={t("react.text")}
+            json={t("json.text")}
+            sass={t("sass.text")}
+            jquery={t("jquery.text")}
+            git={t("git.text")}
+            github={t("github.text")}
+            html={t("html.text")}
+            api={t("api.text")}
+          />
         </AOSEffect>
         <AOSEffect data_aos="fade-right">
-          <Projects />
+          <Projects
+            projectTitle={t("projectTitle.text")}
+            valorantDesc={t("valorantDesc.text")}
+            valorantTitle={t("valorantTitle.text")}
+            cardTitle={t("cardTitle.text")}
+            cardDesc={t("cardDesc.text")}
+            newsPageTitle={t("newsPageTitle.text")}
+            newsPageDesc={t("newsPageDesc.text")}
+          />
         </AOSEffect>
       </div>
       <Footer />

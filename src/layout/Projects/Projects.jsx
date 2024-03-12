@@ -5,28 +5,33 @@ import { useDarkMode } from "../DarkModeContext";
 import valorant from "../../images/valorantguide.png";
 import cartao from "../../images/cartao.png";
 import news from "../../images/news-page.png";
-function Projects() {
+import i18n from "../../i18n";
+function Projects({
+  projectTitle,
+  valorantTitle,
+  valorantDesc,
+  cardTitle,
+  cardDesc,
+  newsPageTitle,
+  newsPageDesc,
+}) {
   const { isDarkMode } = useDarkMode();
-  console.log(valorant);
   const [positions, setPositions] = useState([
     {
-      title: "Valorant Guide",
-      description:
-        "Projeto utilizando a api de valorant, e utilizando as tecnologias HTML, CSS e JavaScript",
+      title: i18n.t(valorantTitle),
+      description: i18n.t(valorantDesc),
       image: valorant,
       projectLink: "https://valorant-guide.vercel.app/index.html",
     },
     {
-      title: "Cartão interativo",
-      description:
-        "Projeto com intuito de criar uma página de cadastro de cartão de crédito, com interatividade, utilizando HTMl, CSS e JavaScript",
+      title: i18n.t(cardTitle),
+      description: i18n.t(cardDesc),
       image: cartao,
       projectLink: "https://interactive-card-form-six.vercel.app/",
     },
     {
-      title: "Página principal de notícias",
-      description:
-        "Projeto focado em uma landing page, focada em posicionamento de elementos, utilizando somente HTML e CSS ",
+      title: i18n.t(newsPageTitle),
+      description: i18n.t(newsPageDesc),
       image: news,
       projectLink: "https://news-homepage-grid.vercel.app/",
     },
@@ -53,7 +58,13 @@ function Projects() {
         isDarkMode ? "projects-white" : "projects-black"
       }`}
     >
-      <h1 className={` titleProjects ${isDarkMode ? 'title-dark': 'title-light'}`}>Projetos</h1>
+      <h1
+        className={` titleProjects ${
+          isDarkMode ? "title-dark" : "title-light"
+        }`}
+      >
+        {projectTitle}
+      </h1>
       <button className="btnLeft" onClick={handleLeftClick}>
         ⇐
       </button>
