@@ -201,7 +201,7 @@ button {
     content: "";
     display: block;
     width: 30px;
-    background-color: rgb(30, 255, 0);
+    background-color: var(--default-color);
     height: 5px;
     color: white;
     position: absolute;
@@ -213,7 +213,7 @@ button {
     content: "";
     display: block;
     width: 30px;
-    background-color: rgb(30, 255, 0);
+    background-color: var(--default-color);
     height: 5px;
     color: white;
     position: absolute;
@@ -225,7 +225,7 @@ button {
     content: "";
     display: block;
     width: 30px;
-    background-color: rgb(30, 255, 0);
+    background-color: var(--default-color);
     height: 5px;
     color: white;
     position: absolute;
