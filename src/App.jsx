@@ -11,7 +11,7 @@ import Skills from "./layout/Skills/Skills";
 import Footer from "./layout/Footer/Footer";
 import BtnToTop from "./layout/btnToTop/BtnToTop";
 import Projects from "./layout/Projects/Projects";
-import Contact from './layout/Contact/Contact';
+import Contact from "./layout/Contact/Contact";
 import "./layout/darkMode.css";
 import { DarkModeProvider } from "./layout/DarkModeContext";
 import AOSEffect from "./layout/AOSEffect/AOSEffect";
@@ -73,7 +73,14 @@ function App() {
           />
         </AOSEffect>
         <AOSEffect data_aos="fade-down">
-          <Contact />
+          <Contact
+            contactTitle={t("contactTitle.text")}
+            phEmail={t("phEmail.text")}
+            phMessage={t("phMessage.text")}
+            phName={t("phName.text")}
+            btnSend={t("btnSend.text")}
+            
+          />
         </AOSEffect>
       </div>
       <Footer />

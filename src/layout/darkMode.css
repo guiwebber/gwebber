@@ -9,7 +9,6 @@
   --nvft-color-light: #6e6d6d;
   --subtitle-color-light: rgb(0, 173, 111);
   --subtitle-color-dark: rgb(0, 173, 111);
-
   --default-color: rgb(0, 173, 111)
 }
 
@@ -56,6 +55,12 @@ body.light-mode {
   color: var(--text-color-dark);
 }
 .icon-light div .iconsSKills {
+  color: var(--text-color-light);
+}
+.icon-dark {
+  color: var(--text-color-dark);
+}
+.icon-light {
   color: var(--text-color-light);
 }
 

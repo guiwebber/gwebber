@@ -26,5 +26,10 @@
   "newsPageTitle.text": "News home page",
   "newsPageDesc.text": "Project focused on a landing page, focused on positioning elements, using only HTML and CSS",
   "projectBtn.text": "Project link",
-  "defaultTechnologyText": "Click on the technologies for a brief summary."
+  "defaultTechnologyText": "Click on the technologies for a brief summary.",
+  "contactTitle.text": "Contact",
+  "phName.text": "Your Name",
+  "phEmail.text": "Your email address",
+  "phMessage.text": "Write your message",
+  "btnSend.text": "Send"
 }
