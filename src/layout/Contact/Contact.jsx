@@ -15,9 +15,9 @@ function Contact() {
     const templateID = 'template_y5ktjt5';
 
     const templateParams = {
-      name: name,
-      email: email,
-      message: message
+      to_name: "Gui ", // Substitua pelo nome do destinatário
+      name: name, // Substitua pelo seu nome
+      message: message // Substitua pelo conteúdo da mensagem
     };
 
     emailjs.send(serviceID, templateID, templateParams)
