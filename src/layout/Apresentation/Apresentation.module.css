@@ -89,12 +89,4 @@
   .title {
     font-size: 3em;
   }
-  .divHello {
-    position: absolute;
-    top: 380px;
-  }
-  .divDev {
-    position: absolute;
-    top: 500px;
-  }
 }
