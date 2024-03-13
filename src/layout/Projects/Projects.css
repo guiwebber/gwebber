@@ -98,7 +98,7 @@
 }
 .btnLeft, .btnRight {
   width: 60px;
-  height: 40px;
+  height: 60px;
 }
 }
 
@@ -135,6 +135,7 @@
   .btnLeft, .btnRight {
     width: 40px;
     height: 40px;
+    font-size: 1.2em;
   }
 
   .imageProject {
@@ -172,15 +173,10 @@
   .box p {
     padding: 2px;
   }
-  .btnLeft, .btnRight {
-    width: 40px;
-    height: 40px;
-
-  }
   .btnLeft {
-    left: 0;
+    left: 5px;
   }  
   .btnRight {
-    right: 0;
+    right: 5px;
   }
 }
