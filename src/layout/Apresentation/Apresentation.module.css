@@ -1,23 +1,24 @@
 .containerApresentation {
   height: 100vh;
-  position: relative;
   display: flex;
-  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.subContainer {
+  display: flex;
   justify-content: center;
   align-items: center;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
+  flex-direction: column;
 }
-.divHello {
-  position: absolute;
-  top: 400px;
-}
-.divDev {
-  position: absolute;
-  top: 530px;
+.iconReact {
+  animation: wheelIcon 10s linear infinite;
+  width: 200px;
+  height: 200px;
+  margin-top: 190px;
+  color: var(--default-color);
+  filter: drop-shadow(1px 2px 8px var(--default-color));
+  margin-bottom: 50px;
 }
 .title {
   font-size: 4em;
@@ -28,12 +29,17 @@
   font-weight: 500;
 }
 .textDev {
-  animation: digitaNome 3s steps(40) 1s normal both;
+  animation: digitaNome 3s steps(40) 1s ease-in-out both;
   white-space: nowrap;
   overflow: hidden;
   border-right: 1px solid rgb(0, 0, 0);
   margin: auto;
   max-width: fit-content;
+}
+.iconsSocial {
+  width: 400px;
+  text-align: center;
+  margin: 15px;
 }
 .iconsSocial a{
   color: white;
@@ -67,6 +73,15 @@
   }
   to {
     width: 14em;
+  }
+}
+
+@keyframes wheelIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 

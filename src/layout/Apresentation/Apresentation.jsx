@@ -4,7 +4,7 @@ import { useState } from "react";
 import "../../index.css";
 import "../darkMode.css";
 import { useDarkMode } from "../DarkModeContext";
-import { FaLinkedin, FaGithub, FaWhatsappSquare } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaWhatsappSquare, FaReact  } from "react-icons/fa";
 
 import "../../i18n";
 function Apresentation({ apresentation, dev }) {
@@ -18,11 +18,14 @@ function Apresentation({ apresentation, dev }) {
   return (
     <div
       id="apresentation"
-      className={` containerDefault ${styles.containerApresentation}  `}
+      className={` ${styles.containerApresentation}  `}
     >
+      <div className={styles.subContainer}>
+
+      <FaReact className={styles.iconReact}/>
       <h1
         className={`${styles.title} ${isDarkMode ? "name-dark" : "name-light"}`}
-      >
+        >
         Guilherme Webber
       </h1>
       <div className={styles.divDev}>
@@ -30,7 +33,7 @@ function Apresentation({ apresentation, dev }) {
           className={`${styles.block} ${styles.textDev} ${
             isDarkMode ? "subtitle-dark" : "subtitle-light"
           }`}
-        >
+          >
           {dev}
         </h2>
         <div className={styles.iconsSocial}>
@@ -45,6 +48,7 @@ function Apresentation({ apresentation, dev }) {
           </a>
         </div>
       </div>
+    </div>
     </div>
     // </ParticlesJS>
   );
