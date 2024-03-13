@@ -15,8 +15,9 @@ function Contact() {
     const templateID = 'template_y5ktjt5';
 
     const templateParams = {
-      to_name: "Gui ", // Substitua pelo nome do destinatário
-      name: name, // Substitua pelo seu nome
+      to_name: "Gui", // Substitua pelo nome do destinatário
+      from_name: name, // Use o nome do remetente
+      from_email: email, // Use o e-mail do remetente
       message: message // Substitua pelo conteúdo da mensagem
     };
 
