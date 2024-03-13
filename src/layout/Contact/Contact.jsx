@@ -8,7 +8,7 @@ import { useDarkMode } from "../DarkModeContext";
 import puppet from "../../images/SP-studio.png";
 import "../../i18n";
 import "../darkMode.css";
-function Contact({ phName, phEmail, phMessage, contactTitle, btnSend }) {
+function Contact({ phName, phEmail, phMessage, contactTitle, btnSend, contact, findMe, textContact }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -58,12 +58,9 @@ function Contact({ phName, phEmail, phMessage, contactTitle, btnSend }) {
       </h1>
       <div className={styles.subContact}>
         <div className={styles.divForm}>
-          <h2>Entre em contato</h2>
+          <h2>{contact}</h2>
           <p className={styles.textContact}>
-            Tem uma empresa ou pretende desenvolver um site, uma proposta de
-            trabalho ou até mesmo uma crítica construtiva, sinta-se a vontade
-            para me contatar através de um e-mail e assim que puder me sentirei
-            grato em lhe responder!
+            {textContact}
           </p>
           <form className={styles.form} id="form" onSubmit={sendEmail}>
             <input
@@ -92,31 +89,31 @@ function Contact({ phName, phEmail, phMessage, contactTitle, btnSend }) {
           </form>
         </div>
         <div className={styles.divSocial}>
-          <h2>Encontre-me em minhas redes sociais</h2>
+          <h2>{findMe}</h2>
           <img className={styles.puppet} src={puppet} alt="" />
           <div className={styles.linksSocialMedia}>
-            <a href="">
+            <a target="_blank" href="https://www.linkedin.com/in/guilherme-webber-00052318a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
               <FaLinkedin
                 className={`${styles.iconSocial} ${
                   isDarkMode ? "icon-light" : "icon-dark"
                 }`}
               />
             </a>
-            <a href="">
+            <a target="_blank" href="https://github.com/guiwebber">
               <FaGithub
                 className={`${styles.iconSocial} ${
                   isDarkMode ? "icon-light" : "icon-dark"
                 }`}
               />
             </a>
-            <a href="">
+            <a target="_blank" href="https://wa.me/+5554991406029">
               <FaWhatsappSquare
                 className={`${styles.iconSocial} ${
                   isDarkMode ? "icon-light" : "icon-dark"
                 }`}
               />
             </a>
-            <a href="">
+            <a target="_blank" href="mailto:guiz1n.webber@gmail.com">
               <SiGmail
                 className={`${styles.iconSocial} ${
                   isDarkMode ? "icon-light" : "icon-dark"

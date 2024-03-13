@@ -79,6 +79,9 @@ function App() {
             phMessage={t("phMessage.text")}
             phName={t("phName.text")}
             btnSend={t("btnSend.text")}
+            findMe={t("findMe.text")}
+            contact={t("contact.text")}
+            textContact={t("textContact.text")}
             
           />
         </AOSEffect>
