@@ -64,7 +64,7 @@ function Projects() {
         {t("projectTitle.text")}
       </h1>
       <button className="btnLeft" onClick={handleLeftClick}>
-        ⇐
+      ❮
       </button>
       {positions.map((project, index) => (
         <div
@@ -92,7 +92,7 @@ function Projects() {
         </div>
       ))}
       <button className="btnRight" onClick={handleRightClick}>
-        ⇒
+      ❯
       </button>
     </div>
   );
