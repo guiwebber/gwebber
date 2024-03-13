@@ -262,6 +262,7 @@ button {
     background-color: transparent;
     backdrop-filter: blur(22px);
     overflow: hidden;
+    position:fixed;
   }
   .container .right,
   .container .list {
