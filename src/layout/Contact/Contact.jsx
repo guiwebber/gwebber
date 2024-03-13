@@ -59,7 +59,7 @@ function Contact({ phName, phEmail, phMessage, contactTitle, btnSend }) {
       <div className={styles.subContact}>
         <div className={styles.divForm}>
           <h2>Entre em contato</h2>
-          <p>
+          <p className={styles.textContact}>
             Tem uma empresa ou pretende desenvolver um site, uma proposta de
             trabalho ou até mesmo uma crítica construtiva, sinta-se a vontade
             para me contatar através de um e-mail e assim que puder me sentirei

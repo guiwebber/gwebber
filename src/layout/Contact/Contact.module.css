@@ -23,12 +23,12 @@
   margin: 10px;
   color: white;
   background-color: var(--default-color);
-  width: 500px;
+  width: 60%;
   height: 200px;
   padding: 10px;
 }
 .form input {
-  width: 500px;
+  width: 60%;
   height: 50px;
 }
 .form input::placeholder,
@@ -42,7 +42,7 @@
   border: none;
   border-top-right-radius: 40px;
   border-bottom-left-radius: 40px;
-  width: 200px;
+  width: 60%;
   height: 50px;
   margin: 10px;
   color: rgb(19, 18, 18);
@@ -61,7 +61,8 @@
 
 .divForm,
 .divSocial {
-  width: 30%;
+  width: 40%;
+  padding: 25px;
 }
 .subContact {
   display: flex;
@@ -82,4 +83,62 @@
 .iconSocial:hover {
   color: var(--default-color);
   transition: 0.5s;
+}
+.textContact {
+    padding: 10px;
+}
+
+@media (max-width: 1400px) {
+  .divForm,
+  .divSocial {
+    width: 50%;
+    padding: 10px;
+  }
+  .mainContact {
+    padding: 0;
+  }
+  .form input {
+    width: 80%;
+    height: 50px;
+  }
+  .form textarea {
+    width: 80%;
+  }
+  .btnSend {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .subContact {
+    flex-direction: column;
+  }
+  .divForm,
+  .divSocial {
+    width: 80%;
+  }
+  .btnSend {
+    width: 80%;
+  }
+}
+
+
+@media (max-width: 500px) {
+    .mainContact {
+        padding: 0;
+    }
+    .subContact {
+        padding: 0;
+    }
+    .divForm,
+  .divSocial {
+    width: 100%;
+  }
+  .form input, .form textarea {
+    width: 95%;
+  }
+
+  .btnSend {
+    width: 95%;
+  }
 }
