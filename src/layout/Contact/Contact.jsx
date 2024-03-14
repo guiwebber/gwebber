@@ -8,7 +8,7 @@ import { useDarkMode } from "../DarkModeContext";
 import puppet from "../../images/SP-studio.png";
 import "../../i18n";
 import "../darkMode.css";
-function Contact({ phName, phEmail, phMessage, contactTitle, btnSend, contact, findMe, textContact }) {
+function Contact({ phName, phEmail, phMessage, contactTitle, btnSend, subTitleContact, findMe, textContact }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -46,7 +46,7 @@ function Contact({ phName, phEmail, phMessage, contactTitle, btnSend, contact, f
       .catch((error) => {
         console.error("Error:", error);
         alert(
-          "Oops! Algo deu errado com sua mensagem, por favor atualize e mandar novamente"
+          "Algo deu errado com sua mensagem, por favor, tente novamente!"
         );
       });
   };
@@ -58,7 +58,7 @@ function Contact({ phName, phEmail, phMessage, contactTitle, btnSend, contact, f
       </h1>
       <div className={styles.subContact}>
         <div className={styles.divForm}>
-          <h2>{contact}</h2>
+          <h2>{subTitleContact}</h2>
           <p className={styles.textContact}>
             {textContact}
           </p>

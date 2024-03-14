@@ -80,7 +80,7 @@ function App() {
             phName={t("phName.text")}
             btnSend={t("btnSend.text")}
             findMe={t("findMe.text")}
-            contact={t("contact.text")}
+            subTitleContact={t("subTitleContact.text")}
             textContact={t("textContact.text")}
             
           />
