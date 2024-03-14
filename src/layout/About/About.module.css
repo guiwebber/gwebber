@@ -106,23 +106,23 @@
 
 @media (max-width: 768px) {
   .divTextAbout {
-    width: 105vw;
+    width: 100%;
     overflow: hidden;
     padding: 0;
   }
   .imgText {
-    width: 100vw;
+    width: 95%;
   }
   .divTextAbout {
-    width: 95%;
+    width: 90%;
     padding: 0;
   }
   .divTextAbout::after { 
-    width: 96%;
+    width: 97%;
   }
   .divTextAbout::before {
     width: 115px;
-    height: 133%;
+    height: 200%;
   }
 }
 
@@ -134,7 +134,7 @@
     height: 950px;
   }
   .divTextAbout::after { 
-    width: 96%;
+    width: 97%;
   }
   .divTextAbout {
     height: 56vh;
