@@ -106,8 +106,16 @@
 
 @media (max-width: 768px) {
   .divTextAbout {
-    width: 100%;
+    width: 105vw;
     overflow: hidden;
+    padding: 0;
+  }
+  .imgText {
+    width: 100vw;
+  }
+  .divTextAbout {
+    width: 100%;
+    padding: 0;
   }
   .divTextAbout::after {
     width: 90%;
