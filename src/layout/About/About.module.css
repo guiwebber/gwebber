@@ -114,17 +114,14 @@
     width: 100vw;
   }
   .divTextAbout {
-    width: 100%;
+    width: 95%;
     padding: 0;
   }
-  .divTextAbout::after {
-    width: 90%;
-  }
-  .containerAbout {
-    margin: 5vh auto;
+  .divTextAbout::after { 
+    width: 96%;
   }
   .divTextAbout::before {
-    width: 110px;
+    width: 115px;
     height: 133%;
   }
 }
