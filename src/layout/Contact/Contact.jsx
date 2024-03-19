@@ -8,7 +8,16 @@ import { useDarkMode } from "../DarkModeContext";
 import puppet from "../../images/SP-studio.png";
 import "../../i18n";
 import "../darkMode.css";
-function Contact({ phName, phEmail, phMessage, contactTitle, btnSend, subTitleContact, findMe, textContact }) {
+function Contact({
+  phName,
+  phEmail,
+  phMessage,
+  contactTitle,
+  btnSend,
+  subTitleContact,
+  findMe,
+  textContact,
+}) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -45,23 +54,25 @@ function Contact({ phName, phEmail, phMessage, contactTitle, btnSend, subTitleCo
       })
       .catch((error) => {
         console.error("Error:", error);
-        alert(
-          "Algo deu errado com sua mensagem, por favor, tente novamente!"
-        );
+        alert("Algo deu errado com sua mensagem, por favor, tente novamente!");
       });
   };
 
   return (
-    <div className={styles.mainContact}>
+    <div id="contact" className={styles.mainContact}>
       <h1 className={`${isDarkMode ? "title-dark" : "title-light"}`}>
         {contactTitle}
       </h1>
       <div className={styles.subContact}>
         <div className={styles.divForm}>
-          <h2>{subTitleContact}</h2>
-          <p className={styles.textContact}>
-            {textContact}
-          </p>
+          <h2
+            className={
+              isDarkMode ? "subtitleContact-light" : "subtitleContact-dark"
+            }
+          >
+            {subTitleContact}
+          </h2>
+          <p className={styles.textContact}>{textContact}</p>
           <form className={styles.form} id="form" onSubmit={sendEmail}>
             <input
               type="text"
@@ -89,10 +100,19 @@ function Contact({ phName, phEmail, phMessage, contactTitle, btnSend, subTitleCo
           </form>
         </div>
         <div className={styles.divSocial}>
-          <h2>{findMe}</h2>
+          <h2
+            className={
+              isDarkMode ? "subtitleContact-light" : "subtitleContact-dark"
+            }
+          >
+            {findMe}
+          </h2>
           <img className={styles.puppet} src={puppet} alt="" />
           <div className={styles.linksSocialMedia}>
-            <a target="_blank" href="https://www.linkedin.com/in/guilherme-webber-00052318a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/guilherme-webber-00052318a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            >
               <FaLinkedin
                 className={`${styles.iconSocial} ${
                   isDarkMode ? "icon-light" : "icon-dark"

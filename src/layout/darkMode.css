@@ -176,3 +176,10 @@ body.light-mode {
 .subtitle-light {
   color: var(--subtitle-color-light);
 }
+
+.subtitleContact-light {
+  color: var(--text-color-light);
+}
+.subtitleContact-dark {
+  color: var(--text-color-dark);
+}

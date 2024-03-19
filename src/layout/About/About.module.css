@@ -26,22 +26,25 @@
 
 .divTextAbout {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   width: 35vw;
   position: relative;
   overflow: hidden;
+  height: 250px;
 }
 
 .divTextAbout::before {
   content: "";
   position: absolute;
   background: rgb(0, 173, 111);
+  top: -300px;
   width: 150px;
-  height: 250%;
+  height: 350%;
   animation: divRotate 3s linear infinite;
   box-shadow: 1px 1px 10px rgb(0, 173, 111);
+  top: -300px;
 }
 
 @keyframes divRotate {
@@ -57,6 +60,8 @@
   width: 34.5vw;
   inset: 5px;
   border-radius: inherit;
+  
+  height: 240px;
 }
 .titleAbout,
 .textAbout {
@@ -66,10 +71,13 @@
   text-align: center;
 }
 .titleAbout {
-  top: 10px;
+  top: -20px;
+}
+.textAbout {
+  top: 60px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1570px) {
   .divTextAbout {
     width: 50vw;
   }
@@ -89,10 +97,9 @@
   }
   .divTextAbout {
     flex-direction: column;
-    height: 40vh;
+    height: 33vh;
     margin: auto;
     align-items: center;
-
     width: 60vw;
     justify-content: center;
   }
@@ -101,50 +108,58 @@
   }
   .divTextAbout::after {
     width: 59vw;
+    height: 31.8vh;
+    
+  }
+  .divTextAbout::before {
+    width: 100px;
   }
 }
 
 @media (max-width: 768px) {
-  .divTextAbout {
-    width: 100%;
-    overflow: hidden;
-    padding: 0;
-  }
+
   .imgText {
     width: 95%;
   }
   .divTextAbout {
-    width: 90%;
+    width: 99%;
+    height: 31vh;
     padding: 0;
   }
   .divTextAbout::after { 
-    width: 97%;
+    width: 98%;
+    height: 30vh;
   }
   .divTextAbout::before {
     width: 115px;
-    height: 200%;
+    height: 400%;
+    top: -390px;
   }
 }
 
 @media (max-width: 600px) {
-  .image {
+
+  .divTextAbout::after { 
+    width: 97%;
+    padding: 0;
     margin: 0;
+    height: 44vh;
+  }
+  .divTextAbout::before {
+    top: -550px;
+  }
+  .divTextAbout {
+    width: 96%;
+    height: 45vh;
+    margin: 0;
+    padding: 0;
   }
   .containerAbout {
     height: 950px;
-  }
-  .divTextAbout::after { 
-    width: 97%;
-  }
-  .divTextAbout {
-    height: 56vh;
-  }
-  .containerAbout {
     margin: 1vh auto;
-    width: auto;
   }
   .image {
-    width: auto;
-    height: 240px;
+    height: 280px;
+    margin: auto;
   }
 }

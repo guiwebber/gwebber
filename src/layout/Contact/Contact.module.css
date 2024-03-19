@@ -25,7 +25,8 @@
   background-color: var(--default-color);
   width: 60%;
   height: 200px;
-  padding: 10px;
+  padding: 20px;
+  text-align: center;
 }
 .form input {
   width: 60%;
@@ -75,13 +76,10 @@
   justify-content: center;
   align-items: center;
 }
-.mainContact div h2 {
-  color: rgb(8, 238, 0);
-  text-shadow: 3px 2px 1px rgb(7, 7, 7);
-}
 
 .puppet {
   width: 200px;
+  padding: 20px;
 }
 
 .iconSocial {
